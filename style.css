@@ -1,31 +1,69 @@
 @charset "UTF-8";
 
-body {
-    background-image: linear-gradient(to right,#EBEADE, #EEE3CE);
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+:root {
+    --cor1: #EBEADE;
+    --cor2: #EEE3CE;
+    --cor3: #657463;
+    --cor4: #1C4128;
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Sriracha', cursive; 
 }
-.container {
-    display: flex;
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+html, body {
+    min-height: 100vh;
+    background-image: linear-gradient(to right,#EBEADE, #EEE3CE);
+    font-family: var(--fonte1);
+}
+
+header {
+    background-image: linear-gradient(to bottom, #1C4128, #657463);
+    color: white;
+}
+
+main {
     background-color: white;
     width: 616px;
     height: 1845px;
     padding-right: 10px;
     border-radius: 10px;
     margin: auto;
+    margin-top: 30px;   
     }
+
+.container {
+    display: flex;
+}
+
 h1{
     text-align: center;
     font-size: 73px;
-    color: #1C4128;
+    color: var(--cor2);
+    font-variant: small-caps;
+    padding: 50px;
 }
 
 h2{
     font-size: 23px;
     color: #657463;
-    text-align: center;    
+    text-align: center;   
+    margin-top: 30px; 
 }
 
 p {
+    font-family: var(--fonte2);
     text-align: justify;
+    padding: 10px 0px 0px 10px;
+}
+
+.content {
     margin: 0;
 }
 
@@ -33,4 +71,5 @@ p {
     padding: 10px 0px 0px 10px;
     margin-right: 10px;
 }
+
 
